@@ -1,0 +1,307 @@
+
+/*---------------- Header(narv bar) -----------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+/* .navbar{
+    position:static;
+} */
+
+.navbar a{
+    color: white;
+    margin-left: 50px;
+}
+
+.navbar a:hover{
+    color:#00CCA8 ;
+}
+
+
+.logo{
+    width: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    margin-left: 650px;
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+ 
+
+/* --------------background animation------------------ */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+    background-color: black;
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.circles{
+    /* position:absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* z-index: -1; */
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(8){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+
+
+
+
+/* ---------------------Servces page---------------------- */
+
+#services{
+    padding: 30px 0;
+    background-color: rgb(9, 9, 9);
+}
+
+#services h1{
+    color: #00CCA8;
+    font-weight: bold;
+}
+.services-list{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+
+.sub-title{
+   justify-items: center;
+   padding: auto;
+   margin: auto;
+   margin-top: 50px;
+   text-align: center;
+}
+
+.services-list div{
+    line-height: normal;
+    background: #262626;
+    padding: 30px; 
+    font-weight: 300;
+    border-radius: 10px;
+    color: white;
+    transition: background 0.5s, transform 0.5s;
+}
+
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: Roboto;
+    color: #23ffd7;
+
+}
+
+.services-list div p{
+    font-family: Roboto;
+    font-weight: 300;
+    line-height: 22px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    font-family: Roboto;
+}
+
+.services-list div:hover{
+    background: #049b7f;
+    transform: translateY(-10px);
+}
+
+.btn{
+    background-color: #049b7f;
+    color: white;
+    font-family: poppins;
+    font-weight: 300;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------css for small screens----------------- */
+nav i{
+    display: none;
+}
+
+@media (max-width:600px) and (max-width: 978px){
+    .header-text{
+        width: 100%;
+        height: 80vh;
+        background-image: url(../image/small-bg.png);
+        background-color: black;
+        background-size: cover;
+        background-position: center;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        width: 80px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0;
+        margin-left: 90px;
+    }
+    
+     .me{
+         color: white;
+         font-weight: bold;
+         font-family: Poppins ;
+         font-size: 25px;
+         margin: 0;
+         margin-top: 100px;
+     }
+     
+     .header-text h1{
+         color: white;
+         font-weight: bold;
+         font-family: Poppins;
+         align-items: center;
+         font-size: 25px;
+         margin: 0;
+         justify-content: center;
+     }
+     
+     
+     .header-text p{
+         font-size: 10px;
+         color: rgb(178, 178, 178);
+         font-family: Roboto Mono;
+         margin: 0;
+         margin-top: 20px;
+         margin-bottom: 20px;
+    
+     }
+     
+     .header-text button{
+        font-size: 12px;
+        margin: 0;
+        background-color: #00CCA8;
+        font-family: Poppins;
+        font-weight: bold;
+        color: white;
+        
+    }
+
+    .header-text img{
+        display: none;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+     }
+
+
+}
+

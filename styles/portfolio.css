@@ -1,0 +1,207 @@
+
+/*---------------- Header(narv bar) -----------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Roboto Mono;
+    box-sizing: border-box;
+}
+
+
+.container{
+    padding: 10px 13%;
+    margin: 0;
+    
+}   
+
+.container-new{
+    padding: 10px;
+    padding-left: 0;
+    /* margin-bottom: 100px; */
+}
+
+
+nav{
+    /* overflow: hidden; */
+    background-color: rgb(11, 11, 11);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 100px;
+    padding-top: 40px;
+    margin-left: 700px;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* <!-- ------------------portfolios page------------------------- --> */
+
+#portfolio{
+    padding: 20px;
+    background-color: black;
+}
+
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    /* margin-top: 50px; */
+}
+
+.work{
+    /* border-radius: 10px; */
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    /* border-radius: 10px; */
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#049b7f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center ;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+    font-family: Roboto;
+}
+
+.layer{
+    font-size: 12px;
+    color: white;
+    font-family: Roboto;
+}
+
+.layer a{
+    /* margin-top: 10px; */
+    color: #049b7f;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 60px;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.sub-title{
+    color: white;
+    justify-items: center;
+    padding: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    text-align: center;
+ }
+
+
+
+/* ----------------copy write-------------------- */
+.copywright{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: rgb(11, 11, 11);
+    font-weight: 300;
+    margin-top: 20px;
+    color: white;
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.copywight i{
+    color: #049b7f;
+}
+
+
+
+/* ------------------------css for small screens----------------- */
+nav i{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container-new{
+        padding: 10px;
+        padding-left: 0;
+    }
+    
+    .logo{
+        width: 70px;
+        padding-top: 30px;
+        margin-left: 150px;
+    }
+
+
+    .header-text{
+        margin-top: 60%;
+        font-size: 16px;
+        margin-left: -170px;
+    }
+
+    .header-text h1{
+        font-size: 20px;
+        /* padding-left: -100px; */
+    }
+
+    .header-text h2{
+        font-size: 20px;
+        /* padding-right: -100px; */
+    }
+
+    .header-text p{
+        font-size: 7px;
+    }
+}
